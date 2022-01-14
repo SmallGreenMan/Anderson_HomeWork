@@ -14,15 +14,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //binding = ActivityMainBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
-
-        //init(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 
     fun goToHomework_3_1(view: android.view.View) {
-        val intent = Intent(this, MainActivity_HW_3_1::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, MainActivity_HW_3_1::class.java))
+    }
+
+    fun goToHomework_3_2(view: android.view.View) {
+        startActivity(Intent(this, MainActivity_HW_3_2::class.java))
     }
 
 
