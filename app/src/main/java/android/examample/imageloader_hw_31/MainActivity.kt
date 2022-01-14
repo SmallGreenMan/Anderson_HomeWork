@@ -14,10 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //binding = ActivityMainBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
-
-        //init(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 
     fun goToHomework_3_1(view: android.view.View) {
