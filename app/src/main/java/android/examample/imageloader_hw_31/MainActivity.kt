@@ -21,8 +21,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goToHomework_3_1(view: android.view.View) {
-        val intent = Intent(this, MainActivity_HW_3_1::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, MainActivity_HW_3_1::class.java))
+    }
+
+    fun goToHomework_3_2(view: android.view.View) {
+        startActivity(Intent(this, MainActivity_HW_3_2::class.java))
     }
 
 
