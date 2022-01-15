@@ -11,4 +11,10 @@
     <string name="flags_app">Flags app</string>
     <string name="home_work_2_1">Home work 2.1</string>
     <string name="hello_toast_app">Hello Toast app</string>
+    <string name="button_label_toast">Toast</string>
+    <string name="button_label_count">Count</string>
+    <string name="count_initial_value">0</string>
+    <string name="toast_message">Hello Toast!</string>
+    <string name="zero">zero</string>
+    <string name="defoult_count_text">0</string>
 </resources>
