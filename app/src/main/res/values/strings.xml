@@ -5,11 +5,11 @@
     <string name="load_image">Load image</string>
     <string name="enter_image_link_here">Enter image link here</string>
     <string name="default_link">https://picsum.photos/0</string>
-    <string name="home_work_3_1">Home Work 3.1</string>
+    <string name="home_work_3_1">Home Work 3</string>
     <string name="image_loader_app">Image loader app</string>
     <string name="home_woek_3_2">Home Woek 3.2</string>
     <string name="flags_app">Flags app</string>
-    <string name="home_work_2_1">Home work 2.1</string>
+    <string name="home_work_2_1">Home work 2</string>
     <string name="hello_toast_app">Hello Toast app</string>
     <string name="button_label_toast">Toast</string>
     <string name="button_label_count">Count</string>
@@ -43,4 +43,16 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="add_comments">Add comments</string>
     <string name="home_work_2_2">Home work 2.2</string>
     <string name="scroling_app">Scroling app</string>
+
+    <string name="edittext_uri">http://developer.android.com</string>
+    <string name="button_uri">Open Website</string>
+
+    <string name="edittext_loc">Golden Gate Bridge</string>
+    <string name="button_loc">Open Location</string>
+
+    <string name="edittext_share">\'Twas brillig and the slithy toves</string>
+    <string name="button_share">Share This Text</string>
+
+    <string name="Share_this_text_with">\"Share this text with: \"</string>
+    <string name="take_a_picture">Take a picture</string>
 </resources>

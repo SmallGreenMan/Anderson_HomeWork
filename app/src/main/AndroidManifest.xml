@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ImageLoader_HW_31"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".MainActivity_HW_2_3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity_HW_2_2"
             android:exported="false" />
         <activity

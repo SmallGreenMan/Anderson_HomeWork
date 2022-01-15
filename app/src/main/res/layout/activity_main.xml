@@ -41,18 +41,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView_HW21_TextView"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/textView_HW22_TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/inside_margin"
-                android:text="@string/home_work_2_2"
-                android:textSize="@dimen/text_size"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_2_1"/>
-
             <Button
                 android:id="@+id/button_HomeWork_2_2"
                 android:layout_width="wrap_content"
@@ -65,21 +53,35 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_HW22_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_2_1"
                 app:layout_constraintVertical_bias="0.0" />
 
+            <Button
+                android:id="@+id/button_HomeWork_2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inside_margin"
+                android:layout_marginBottom="@dimen/inside_margin"
+                android:onClick="goToHomework_2_3"
+                android:text="implicit intent app"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_2_2"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView_HW31_TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/madgin_outside"
                 android:text="@string/home_work_3_1"
                 android:textSize="@dimen/text_size"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_2_2" />
+                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_2_3" />
 
             <Button
                 android:id="@+id/button_HomeWork_3_1"
@@ -96,23 +98,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView_HW31_TextView"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/textView_HW32_TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/home_woek_3_2"
-                android:textSize="@dimen/text_size"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_3_1" />
-
             <Button
                 android:id="@+id/button_HomeWork_3_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/inside_margin"
                 android:layout_marginBottom="@dimen/inside_margin"
                 android:onClick="goToHomework_3_2"
                 android:text="@string/flags_app"
@@ -120,7 +109,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_HW32_TextView"
+                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_3_1"
                 app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
