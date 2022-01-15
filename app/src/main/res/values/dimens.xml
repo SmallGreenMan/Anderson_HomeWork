@@ -2,4 +2,6 @@
 <resources>
     <dimen name="madgin_outside">16dp</dimen>
     <dimen name="margin_inside">8dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="inside_margin">8dp</dimen>
 </resources>

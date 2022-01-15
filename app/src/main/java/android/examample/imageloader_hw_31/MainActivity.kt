@@ -26,5 +26,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, MainActivity_HW_3_2::class.java))
     }
 
+    fun goToHomework_2_1(view: android.view.View) {}
+
 
 }

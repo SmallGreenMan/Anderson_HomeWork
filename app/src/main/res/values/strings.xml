@@ -9,4 +9,6 @@
     <string name="image_loader_app">Image loader app</string>
     <string name="home_woek_3_2">Home Woek 3.2</string>
     <string name="flags_app">Flags app</string>
+    <string name="home_work_2_1">Home work 2.1</string>
+    <string name="hello_toast_app">Hello Toast app</string>
 </resources>
