@@ -3,6 +3,7 @@ package android.examample.imageloader_hw_31
 import android.examample.imageloader_hw_31.databinding.ActivityMainHw31Binding
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.squareup.picasso.MemoryPolicy
 import com.squareup.picasso.Picasso
 import android.view.inputmethod.InputMethodManager
@@ -24,14 +25,16 @@ class MainActivity_HW_3_1 : AppCompatActivity() {
     private fun init(savedInstanceState: Bundle?) {
         binding.buttonLoad.setOnClickListener {
             var link = binding.editTextLink.text.toString()
-            if (link.equals(""))
+            if (link.equals("")) {
                 link = getString(R.string.default_link)
-
-            //val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-
-//            val imm by lazy {getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager}
-//            imm?.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
-
+                binding.editTextLink.setText(R.string.default_link)
+            }
+            try {
+                val imm by lazy { getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager }
+                imm?.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
+            }
+            catch(e:Exception){
+                Log.d("HW_3_1",e.toString())}
             loadImage(link)
         }
     }
