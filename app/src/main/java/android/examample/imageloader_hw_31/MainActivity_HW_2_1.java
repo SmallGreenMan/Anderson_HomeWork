@@ -50,7 +50,7 @@ public class MainActivity_HW_2_1 extends AppCompatActivity {
 
     private void chngeCollor(){
         if (mCount == 0){
-            binding.buttonZero.setBackgroundColor (getColor(R.color.gray));
+            binding.buttonZero.setBackgroundColor(getColor(R.color.gray));
             binding.buttonCount.setBackgroundColor(getColor(R.color.blue));
         } else {
             binding.buttonZero.setBackgroundColor(getColor(R.color.purple_200));

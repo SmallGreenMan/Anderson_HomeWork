@@ -8,14 +8,9 @@ import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
     }
 
     fun goToHomework_3_1(view: android.view.View) {
@@ -32,6 +27,10 @@ class MainActivity : AppCompatActivity() {
 
     fun goToHomework_2_2(view: android.view.View) {
         startActivity(Intent(this, MainActivity_HW_2_2::class.java))
+    }
+
+    fun goToHomework_2_3(view: android.view.View) {
+        startActivity(Intent(this, MainActivity_HW_2_3::class.java))
     }
 
 
