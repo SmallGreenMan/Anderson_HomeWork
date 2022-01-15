@@ -54,7 +54,10 @@ public class MainActivity_HW_2_1 extends AppCompatActivity {
             binding.buttonCount.setBackgroundColor(getColor(R.color.blue));
         } else {
             binding.buttonZero.setBackgroundColor(getColor(R.color.purple_200));
-            binding.buttonCount.setBackgroundColor(getColor(R.color.green));
+            if (mCount%2 == 0)
+                binding.buttonCount.setBackgroundColor(getColor(R.color.green));
+            else
+                binding.buttonCount.setBackgroundColor(getColor(R.color.red));
         }
     }
 
