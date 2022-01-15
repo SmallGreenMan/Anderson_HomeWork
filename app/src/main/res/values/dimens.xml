@@ -4,4 +4,8 @@
     <dimen name="margin_inside">8dp</dimen>
     <dimen name="text_size">20sp</dimen>
     <dimen name="inside_margin">8dp</dimen>
+    <dimen name="padding_regular">10dp</dimen>
+    <dimen name="line_spacing">5sp</dimen>
+    <dimen name="extra_eadding">24dp</dimen>
+    <dimen name="subHeading_width">100dp</dimen>
 </resources>

@@ -30,7 +30,7 @@ class MainActivity_HW_3_1 : AppCompatActivity() {
                 binding.editTextLink.setText(R.string.default_link)
             }
             try {
-                val imm by lazy { getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager }
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
                 imm?.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
             }
             catch(e:Exception){

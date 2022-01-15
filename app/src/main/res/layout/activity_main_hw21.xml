@@ -7,6 +7,20 @@
     tools:context=".MainActivity_HW_2_1">
 
     <Button
+        android:id="@+id/button_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/madgin_outside"
+        android:layout_marginTop="@dimen/inside_margin"
+        android:backgroundTint="@color/blue"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_zero" />
+
+    <Button
         android:id="@+id/button_toast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,12 +30,13 @@
         android:onClick="showToast"
         android:text="@string/button_label_toast"
         android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_zero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_zero"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/madgin_outside"
         android:layout_marginTop="@dimen/inside_margin"
@@ -29,21 +44,9 @@
         android:onClick="countUp"
         android:text="@string/zero"
         android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast" />
-
-    <Button
-        android:id="@+id/button_count"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/madgin_outside"
-        android:layout_marginTop="@dimen/inside_margin"
-        android:backgroundTint="@color/blue"
-        android:onClick="countUp"
-        android:text="@string/button_label_count"
-        android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_zero" />
 
     <TextView
         android:id="@+id/show_count"
