@@ -37,13 +37,19 @@ All homework tasks were implemented in one application.
 
 Create flags of countries below:
 
-<li>Austria
-<li>Poland
-<li>Italy
-<li>Colombia
-<li>Madagascar
-<li>Thailand
-<li>Denmark
-<li>Switzerland
+<li> Austria
+<li> Poland
+<li> Italy
+<li> Colombia
+<li> Madagascar
+<li> Thailand
+<li> Denmark
+<li> Switzerland
 
 Only colors, View and containers (FrameLayout/LinearLayout/ConstraintLayout) are possible to use.
+
+## Home work 4
+
+### - CustomView Clock app:
+
+<li> Implement your own component to display a round, analog clock. The second, minute and hour hands should work.
