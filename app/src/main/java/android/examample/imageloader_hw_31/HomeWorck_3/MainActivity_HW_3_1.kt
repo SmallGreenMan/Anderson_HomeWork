@@ -1,5 +1,6 @@
-package android.examample.imageloader_hw_31
+package android.examample.imageloader_hw_31.HomeWorck_3
 
+import android.examample.imageloader_hw_31.R
 import android.examample.imageloader_hw_31.databinding.ActivityMainHw31Binding
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,7 +32,7 @@ class MainActivity_HW_3_1 : AppCompatActivity() {
             }
             try {
                 val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-                imm?.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
+                imm.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
             }
             catch(e:Exception){
                 Log.d("HW_3_1",e.toString())}

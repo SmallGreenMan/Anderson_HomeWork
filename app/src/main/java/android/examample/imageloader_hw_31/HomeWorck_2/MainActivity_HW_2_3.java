@@ -1,9 +1,10 @@
-package android.examample.imageloader_hw_31;
+package android.examample.imageloader_hw_31.HomeWorck_2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ShareCompat;
 
 import android.content.Intent;
+import android.examample.imageloader_hw_31.R;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;

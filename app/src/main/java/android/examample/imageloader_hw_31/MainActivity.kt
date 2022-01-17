@@ -2,8 +2,13 @@ package android.examample.imageloader_hw_31
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.examample.imageloader_hw_31.databinding.ActivityMainBinding
 import android.content.Intent
+import android.examample.imageloader_hw_31.HomeWorck_2.MainActivity_HW_2_1
+import android.examample.imageloader_hw_31.HomeWorck_2.MainActivity_HW_2_2
+import android.examample.imageloader_hw_31.HomeWorck_2.MainActivity_HW_2_3
+import android.examample.imageloader_hw_31.HomeWorck_3.MainActivity_HW_3_1
+import android.examample.imageloader_hw_31.HomeWorck_3.MainActivity_HW_3_2
+import android.examample.imageloader_hw_31.HomeWorck_4.MainActivity_HW_4
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +36,10 @@ class MainActivity : AppCompatActivity() {
 
     fun goToHomework_2_3(view: android.view.View) {
         startActivity(Intent(this, MainActivity_HW_2_3::class.java))
+    }
+
+    fun goToHomework_4(view: android.view.View) {
+        startActivity(Intent(this, MainActivity_HW_4::class.java))
     }
 
 

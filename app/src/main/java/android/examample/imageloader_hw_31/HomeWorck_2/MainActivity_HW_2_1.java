@@ -1,7 +1,8 @@
-package android.examample.imageloader_hw_31;
+package android.examample.imageloader_hw_31.HomeWorck_2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.examample.imageloader_hw_31.R;
 import android.examample.imageloader_hw_31.databinding.ActivityMainHw21Binding;
 import android.os.Bundle;
 import android.util.Log;

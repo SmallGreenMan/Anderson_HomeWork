@@ -1,8 +1,8 @@
-package android.examample.imageloader_hw_31
+package android.examample.imageloader_hw_31.HomeWorck_3
 
+import android.examample.imageloader_hw_31.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 
 
 /*

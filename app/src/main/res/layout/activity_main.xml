@@ -6,111 +6,91 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_HW21_TextView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_marginTop="@dimen/inside_margin"
+            android:text="@string/home_work_2_1"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView_HW21_TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/inside_margin"
-                android:text="@string/home_work_2_1"
-                android:textSize="@dimen/text_size"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/button_HomeWork_2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inside_margin"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goToHomework_2_1"
+            android:text="@string/hello_toast_app" />
 
-            <Button
-                android:id="@+id/button_HomeWork_2_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/inside_margin"
-                android:layout_marginBottom="@dimen/inside_margin"
-                android:onClick="goToHomework_2_1"
-                android:text="@string/hello_toast_app"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_HW21_TextView"
-                app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/button_HomeWork_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inside_margin"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goToHomework_2_2"
+            android:text="@string/scroling_app" />
 
-            <Button
-                android:id="@+id/button_HomeWork_2_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/inside_margin"
-                android:layout_marginBottom="@dimen/inside_margin"
-                android:onClick="goToHomework_2_2"
-                android:text="@string/scroling_app"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_2_1"
-                app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/button_HomeWork_2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inside_margin"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goToHomework_2_3"
+            android:text="implicit intent app" />
 
-            <Button
-                android:id="@+id/button_HomeWork_2_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/inside_margin"
-                android:layout_marginBottom="@dimen/inside_margin"
-                android:onClick="goToHomework_2_3"
-                android:text="implicit intent app"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_2_2"
-                app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textView_HW31_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/madgin_outside"
+            android:text="@string/home_work_3_1"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView_HW31_TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/madgin_outside"
-                android:text="@string/home_work_3_1"
-                android:textSize="@dimen/text_size"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_2_3" />
+        <Button
+            android:id="@+id/button_HomeWork_3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inside_margin"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goToHomework_3_1"
+            android:text="@string/image_loader_app" />
 
-            <Button
-                android:id="@+id/button_HomeWork_3_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/inside_margin"
-                android:layout_marginBottom="@dimen/inside_margin"
-                android:onClick="goToHomework_3_1"
-                android:text="@string/image_loader_app"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_HW31_TextView"
-                app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/button_HomeWork_3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goToHomework_3_2"
+            android:text="@string/flags_app" />
 
-            <Button
-                android:id="@+id/button_HomeWork_3_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/inside_margin"
-                android:onClick="goToHomework_3_2"
-                android:text="@string/flags_app"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button_HomeWork_3_1"
-                app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textView_HW4_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/madgin_outside"
+            android:text="@string/home_worck_4"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/button_HomeWork_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inside_margin"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goToHomework_4"
+            android:text="@string/customview_clock" />
+
+    </LinearLayout>
 </androidx.core.widget.NestedScrollView>
