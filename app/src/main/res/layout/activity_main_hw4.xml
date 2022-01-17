@@ -11,7 +11,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        app:hoursArrowCollor = "@color/blue"
+        app:hoursArrowThickness = "45"
+        app:hoursArrowLength = "250"
+
+        app:minutesArrowCollor = "@color/green"
+        app:minutesArrowThickness = "30"
+        app:minutesArrowLength = "350"
+
+        app:secondsArrowCollor = "@color/red"
+        app:secondsArrowThickness = "10"
+        app:secondsArrowLength = "440"
+        />
 
 </LinearLayout>

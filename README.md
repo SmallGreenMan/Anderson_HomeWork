@@ -53,3 +53,4 @@ Only colors, View and containers (FrameLayout/LinearLayout/ConstraintLayout) are
 ### - CustomView Clock app:
 
 <li> Implement your own component to display a round, analog clock. The second, minute and hour hands should work.
+<li> Implement the ability to change the color of the arrows, as well as their size, from xml using attributes.
