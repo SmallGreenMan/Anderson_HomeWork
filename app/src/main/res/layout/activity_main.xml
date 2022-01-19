@@ -12,6 +12,12 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <Switch
+            android:id="@+id/nightTheamSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nnight_theam" />
+
         <TextView
             android:id="@+id/textView_HW21_TextView"
             android:layout_width="wrap_content"
@@ -46,7 +52,7 @@
             android:layout_marginTop="@dimen/inside_margin"
             android:layout_marginBottom="@dimen/inside_margin"
             android:onClick="goToHomework_2_3"
-            android:text="implicit intent app" />
+            android:text="@string/implicit_intent_app" />
 
         <TextView
             android:id="@+id/textView_HW31_TextView"
