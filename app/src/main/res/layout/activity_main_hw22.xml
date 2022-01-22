@@ -1,62 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-
-<ScrollView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="@dimen/extra_eadding">
-
-    <RelativeLayout
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_HW_22"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/article_heading"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar_HW_22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:navigationContentDescription="Back to the previous screen"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Scroling app" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/extra_eadding">
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/design_default_color_primary"
-            android:padding="@dimen/padding_regular"
-            android:text="@string/article_title"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/article_subheading"
-            android:layout_width="@dimen/subHeading_width"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/article_heading"
-            android:padding="@dimen/padding_regular"
-            android:text="@string/article_subtitle"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+            <TextView
+                android:id="@+id/article_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_primary"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_title"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/article"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/article_heading"
-            android:layout_toRightOf="@id/article_subheading"
-            android:autoLink="web"
-            android:gravity="left"
-            android:lineSpacingExtra="@dimen/line_spacing"
-            android:padding="@dimen/padding_regular"
-            android:text="@string/article_text" />
+            <TextView
+                android:id="@+id/article_subheading"
+                android:layout_width="@dimen/subHeading_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/article_heading"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_subtitle"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/article"
-            android:layout_margin="8dp"
-            android:layout_toRightOf="@id/article_subheading"
-            android:text="@string/add_comments" />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/article_heading"
+                android:layout_toRightOf="@id/article_subheading"
+                android:autoLink="web"
+                android:gravity="left"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_text" />
 
-</ScrollView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/article"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/article_subheading"
+                android:text="@string/add_comments" />
+        </RelativeLayout>
 
-</RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".HomeWorck_2.MainActivity_HW_2_1">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_toAst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar_toAst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:navigationContentDescription="Back to the previous screen"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Toast app" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <Button
         android:id="@+id/button_count"
         android:layout_width="wrap_content"
@@ -25,14 +44,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/madgin_outside"
-        android:layout_marginTop="@dimen/madgin_outside"
         android:background="@color/design_default_color_primary"
         android:onClick="showToast"
         android:text="@string/button_label_toast"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/button_zero"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/show_count" />
 
     <Button
         android:id="@+id/button_zero"
@@ -61,6 +79,6 @@
         android:textSize="160sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/button_toast"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout_toAst" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

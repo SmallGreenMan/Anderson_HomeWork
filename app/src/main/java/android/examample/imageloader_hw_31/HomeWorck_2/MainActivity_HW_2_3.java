@@ -1,6 +1,7 @@
 package android.examample.imageloader_hw_31.HomeWorck_2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ShareCompat;
 
 import android.content.Intent;
@@ -26,6 +27,11 @@ public class MainActivity_HW_2_3 extends AppCompatActivity {
         mLocationEditText = findViewById(R.id.location_edittext);
         mWebsiteEditText = findViewById(R.id.website_edittext);
         mShareTextEditText = findViewById(R.id.share_edittext);
+
+        Toolbar toolbar = findViewById(R.id.toolBar_HW_23);
+        toolbar.setNavigationOnClickListener(v -> {
+            finish();
+        });
     }
 
     // Website

@@ -42,6 +42,10 @@ public class MainActivity_HW_2_1 extends AppCompatActivity {
             mCount = 0;
             showMCountToUser();
         });
+
+        binding.toolBarToAst.setNavigationOnClickListener(v -> {
+            finish();
+        });
     }
 
     private void showMCountToUser(){
@@ -72,6 +76,8 @@ public class MainActivity_HW_2_1 extends AppCompatActivity {
             showMCountToUser();
         }
     }
+
+
 
     @Override
     public void onSaveInstanceState(Bundle outState) {

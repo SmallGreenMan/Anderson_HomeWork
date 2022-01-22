@@ -21,6 +21,10 @@ class MainActivity_HW_3_1 : AppCompatActivity() {
         setContentView(binding.root)
 
         init(savedInstanceState)
+
+        binding.toolBarHW31.setNavigationOnClickListener {
+            finish()
+        }
     }
 
     private fun init(savedInstanceState: Bundle?) {

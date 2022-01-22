@@ -24,10 +24,14 @@ class MainActivity : AppCompatActivity() {
         nightTeamSwitch = findViewById(R.id.nightTheamSwitch)
         nightTeamSwitch.setOnClickListener {
             if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_NO)
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            else
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            else
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
 
+        if (savedInstanceState == null) {
+            nightTeamSwitch.isChecked = false
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
     }
 

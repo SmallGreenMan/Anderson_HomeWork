@@ -4,63 +4,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".HomeWorck_2.MainActivity_HW_2_3">
 
-    <EditText
-        android:id="@+id/website_edittext"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_HW_23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar_HW_23"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:navigationContentDescription="Back to the previous screen"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Implicit intent app" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textUri"
-        android:text="@string/edittext_uri"
-        tools:ignore="TouchTargetSizeCheck" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/open_website_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:onClick="openWebsite"
-        android:text="@string/button_uri" />
+        <EditText
+            android:id="@+id/website_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"
+            android:text="@string/edittext_uri"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/location_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:text="@string/edittext_loc"
-        tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/open_website_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:onClick="openWebsite"
+            android:text="@string/button_uri" />
 
-    <Button
-        android:id="@+id/open_location_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:onClick="openLocation"
-        android:text="@string/button_loc" />
+        <EditText
+            android:id="@+id/location_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="@string/edittext_loc"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/share_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:text="@string/edittext_share"
-        tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/open_location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:onClick="openLocation"
+            android:text="@string/button_loc" />
 
-    <Button
-        android:id="@+id/share_text_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:onClick="shareText"
-        android:text="@string/button_share" />
+        <EditText
+            android:id="@+id/share_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="@string/edittext_share"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/button_takePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:onClick="takePicture"
-        android:text="@string/take_a_picture" />
+        <Button
+            android:id="@+id/share_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:onClick="shareText"
+            android:text="@string/button_share" />
+
+        <Button
+            android:id="@+id/button_takePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="takePicture"
+            android:text="@string/take_a_picture" />
+    </LinearLayout>
 
 </LinearLayout>
