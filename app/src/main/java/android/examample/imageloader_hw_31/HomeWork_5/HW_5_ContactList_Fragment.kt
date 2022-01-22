@@ -26,7 +26,7 @@ class HW_5_ContactList_Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_h_w_5__contact_list_, container, false)
+        return inflater.inflate(R.layout.fragment_h_w_5_contact_list_, container, false)
     }
 
     companion object {

@@ -14,4 +14,10 @@
         <attr name="secondsArrowLength" format="float" />
     </declare-styleable>
 
+    <declare-styleable name="ElementOfConntactListView">
+        <attr name="firstName" format="string"/>
+        <attr name="secondName" format="string"/>
+        <attr name="telephoneNumber" format="string"/>
+    </declare-styleable>
+
 </resources>
