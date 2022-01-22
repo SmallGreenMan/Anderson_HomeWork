@@ -98,5 +98,23 @@
             android:onClick="goToHomework_4"
             android:text="@string/customview_clock" />
 
+        <TextView
+            android:id="@+id/textView_HW5_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/madgin_outside"
+            android:text="@string/home_work_5"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_HomeWork_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inside_margin"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goToHomework_5"
+            android:text="@string/contact_list_linerlayout" />
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

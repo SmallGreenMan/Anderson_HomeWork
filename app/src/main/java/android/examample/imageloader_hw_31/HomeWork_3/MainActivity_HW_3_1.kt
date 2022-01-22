@@ -1,4 +1,4 @@
-package android.examample.imageloader_hw_31.HomeWorck_3
+package android.examample.imageloader_hw_31.HomeWork_3
 
 import android.examample.imageloader_hw_31.R
 import android.examample.imageloader_hw_31.databinding.ActivityMainHw31Binding

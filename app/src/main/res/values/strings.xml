@@ -59,4 +59,11 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="customview_clock">CustomView Clock</string>
     <string name="implicit_intent_app">implicit intent app</string>
     <string name="nnight_theam">Nnight theam</string>
+    <string name="home_work_5">Home work 5</string>
+    <string name="contact_list_linerlayout">Contact list (linerLayout)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name:</string>
+    <string name="lastname">lastname:</string>
+    <string name="telephone">Telephone:</string>
 </resources>

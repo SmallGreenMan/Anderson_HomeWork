@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeWorck_2.MainActivity_HW_2_1">
+    tools:context=".HomeWork_2.MainActivity_HW_2_1">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout_toAst"

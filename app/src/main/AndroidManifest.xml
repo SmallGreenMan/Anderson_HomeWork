@@ -13,22 +13,25 @@
         android:theme="@style/Theme.ImageLoader_HW_31"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".HomeWorck_4.MainActivity_HW_4"
+            android:name=".HomeWork_5.MainActivity_HW_5"
             android:exported="false" />
         <activity
-            android:name=".HomeWorck_2.MainActivity_HW_2_3"
+            android:name=".HomeWork_4.MainActivity_HW_4"
             android:exported="false" />
         <activity
-            android:name=".HomeWorck_2.MainActivity_HW_2_2"
+            android:name=".HomeWork_2.MainActivity_HW_2_3"
             android:exported="false" />
         <activity
-            android:name=".HomeWorck_2.MainActivity_HW_2_1"
+            android:name=".HomeWork_2.MainActivity_HW_2_2"
             android:exported="false" />
         <activity
-            android:name=".HomeWorck_3.MainActivity_HW_3_2"
+            android:name=".HomeWork_2.MainActivity_HW_2_1"
             android:exported="false" />
         <activity
-            android:name=".HomeWorck_3.MainActivity_HW_3_1"
+            android:name=".HomeWork_3.MainActivity_HW_3_2"
+            android:exported="false" />
+        <activity
+            android:name=".HomeWork_3.MainActivity_HW_3_1"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -5,39 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomeWork_4.MainActivity_HW_4">
+    tools:context=".HomeWork_5.MainActivity_HW_5">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout_HW_4"
+        android:id="@+id/appBarLayout_HW_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolBar_HW_4"
+            android:id="@+id/toolBar_HW_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             app:navigationContentDescription="Back to the previous screen"
             app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
-            app:title="CustomView app" />
+            app:title="Contact list (Linerlayout)" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <android.examample.imageloader_hw_31.HomeWork_4.UI.CustomView_Clock
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
-        app:hoursArrowCollor="@color/blue"
-        app:hoursArrowLength="250"
-        app:hoursArrowThickness="45"
-
-        app:minutesArrowCollor="@color/green"
-        app:minutesArrowLength="350"
-        app:minutesArrowThickness="30"
-
-        app:secondsArrowCollor="@color/red"
-        app:secondsArrowLength="440"
-        app:secondsArrowThickness="10" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_HW_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

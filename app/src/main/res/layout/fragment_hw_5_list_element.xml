@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_regular"
+    android:backgroundTint="#9C9B9B"
+    app:barrierMargin="16dp">
+
+    <Button
+        android:id="@+id/listElementButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@+id/shapeableImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameLable"
+        style="@style/HW_5_textView_style"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/HW_5_textView_style"
+        app:layout_constraintStart_toEndOf="@+id/nameLable"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/lastnameLable"
+        style="@style/HW_5_textView_style"
+        android:text="@string/lastname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLable" />
+
+    <TextView
+        android:id="@+id/lastnameTextView"
+        style="@style/HW_5_textView_style"
+        app:layout_constraintStart_toEndOf="@+id/lastnameLable"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/telephonNumberLable"
+        style="@style/HW_5_textView_style"
+        android:text="@string/telephone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameLable" />
+
+    <TextView
+        android:id="@+id/telephonNumberTextView"
+        style="@style/HW_5_textView_style"
+        app:layout_constraintStart_toEndOf="@+id/telephonNumberLable"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameTextView"
+        tools:text="@tools:sample/cities" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="8dp"
+        android:background="#939292"
+        android:shape="rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/telephonNumberTextView"
+        tools:layout_editor_absoluteX="8dp">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <!--        tools:text="@tools:sample/cities" -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
