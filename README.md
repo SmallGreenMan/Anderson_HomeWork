@@ -30,8 +30,8 @@ All homework tasks were implemented in one application.
 
 ### - Image loader app:
 
-<li>Create a views edittext and ImageView
-<li>Load an image by the url in the edittext amd and show it in ImageView
+<li> Create a views edittext and ImageView
+<li> Load an image by the url in the edittext amd and show it in ImageView
 
 ### - Flag app:
 
@@ -54,4 +54,16 @@ Only colors, View and containers (FrameLayout/LinearLayout/ConstraintLayout) are
 
 <li> Implement your own component to display a round, analog clock. The second, minute and hour hands should work.
 <li> Implement the ability to change the color of the arrows, as well as their size, from xml using attributes.
-  
+
+## Home work 5
+
+### - Contact list (Linerlayout) app:
+
+<li> Implement an application to display the contact list and contact details. The application must consists of 1 Activity and 2 Fragments. The first screen should display a list of contacts, the second screen should display the details of the selected contact.
+<li> The contacts list must be created based on the linerlayout
+<li> Each element of the list must contain information about the name, surname and phone number of the contact
+<li> When you click on any item in the contact list, a second screen should open containing the contact's information.
+<li> When pressing the system back button, a user should return to the previous screen. If the user was on the contact list screen, then the user should exit the application.
+<li> When long pressing on a list item, delete it and display the list without this item
+<li> Implement the ability to change the contact on the second screen. All changes should be visible on the first screen
+

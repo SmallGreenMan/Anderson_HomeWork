@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/madgin_outside"
-    android:background="#F6ECEC"
     android:clickable="false"
     android:orientation="vertical"
     tools:context=".HomeWork_5.Fragments.HW_5_ContactInfo_Fragment">
