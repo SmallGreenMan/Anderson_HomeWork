@@ -7,6 +7,8 @@
         <item>Дмитрий</item>
         <item>Максим</item>
         <item>Василий</item>
+        <item>Анатолий</item>
+        <item>Станислав</item>
     </string-array>
 
     <string-array name="lastNames">
@@ -16,6 +18,8 @@
         <item>Дмитриевич</item>
         <item>Максимович</item>
         <item>Васильевич</item>
+        <item>Анатольевич</item>
+        <item>Станиславович</item>
     </string-array>
 
     <string-array name="telephoneNumbers">
@@ -25,6 +29,8 @@
         <item>+4444444444</item>
         <item>+5555555555</item>
         <item>+6666666666</item>
+        <item>+7777777777</item>
+        <item>+8888888888</item>
     </string-array>
 
 </resources>

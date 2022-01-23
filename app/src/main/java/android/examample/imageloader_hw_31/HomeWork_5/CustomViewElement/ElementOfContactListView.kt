@@ -5,23 +5,17 @@ import android.examample.imageloader_hw_31.R
 import android.examample.imageloader_hw_31.databinding.FragmentHw5ListElementBinding
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import androidx.annotation.StyleRes
-import androidx.constraintlayout.widget.ConstraintLayout
 import android.view.View
-import android.view.View.OnLongClickListener
-import android.util.Log
+import androidx.constraintlayout.widget.ConstraintLayout
 
 
-
-
-
-enum class ElementOfContactActions{
+enum class ElementOfContactActions {
     OPEN, DELETE
 }
 
 typealias ElementOfContactActionsListener = (ElementOfContactActions) -> Unit
 
-class ElementOfContactListView (
+class ElementOfContactListView(
     context: Context,
     attrs: AttributeSet?,
     defStyleAttr: Int,
@@ -36,7 +30,13 @@ class ElementOfContactListView (
         }
 
 
-    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : this(context, null, 0,0)
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : this(
+        context,
+        null,
+        0,
+        0
+    )
+
     constructor(context: Context, attrs: AttributeSet?) : this(context, null, 0)
     constructor(context: Context) : this(context, null)
 
@@ -49,11 +49,11 @@ class ElementOfContactListView (
         initListeners()
     }
 
-    private fun initListeners(){
-        binding.elementButton.setOnClickListener  {
+    private fun initListeners() {
+        binding.elementButton.setOnClickListener {
             this.listener?.invoke(ElementOfContactActions.OPEN)
         }
-        binding.elementButton.setOnLongClickListener{
+        binding.elementButton.setOnLongClickListener {
             this.listener?.invoke(ElementOfContactActions.DELETE)
             return@setOnLongClickListener true
         }
@@ -64,13 +64,15 @@ class ElementOfContactListView (
         return false
     }
 
-    fun setFirstNameText (text: String?){
+    fun setFirstNameText(text: String?) {
         binding.firstNameTextView.text = text
     }
-    fun setlastNameText (text: String?){
+
+    fun setlastNameText(text: String?) {
         binding.lastNameTextView.text = text
     }
-    fun setTelephoneNumberText (text: String?){
+
+    fun setTelephoneNumberText(text: String?) {
         binding.telephonNumberTextView.text = text
     }
 

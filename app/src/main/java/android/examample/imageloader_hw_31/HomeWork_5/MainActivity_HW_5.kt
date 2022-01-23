@@ -5,22 +5,44 @@ import android.examample.imageloader_hw_31.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-
-var testIndex = 1
+lateinit var contactsData: MutableMap<Int, MainActivity_HW_5.ListOfContactsClass>
 
 class MainActivity_HW_5 : AppCompatActivity() {
 
-//    lateinit var contactsData: List<ListOfContactsClass>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_hw5)
 
-        testIndex = 12312312
+        if (savedInstanceState == null)
+            initData()
 
         supportFragmentManager.beginTransaction()
-            .add(R.id.fragment_container_HW_5, HW_5_ContactList_Fragment()) // or replace с теми же параметрами
-            //.addToBackStack(null) // если необходимо, чтоб по нажатию "назад" вы могли вернуться на предыдущий фрагмент. Вместо null можно задать свой ключ.
-            .commit();
+            .add(R.id.fragment_container_HW_5, HW_5_ContactList_Fragment())
+            .commit()
     }
+
+    private fun initData() {
+        val firstNames = resources.getStringArray(R.array.firstNames)
+        val lastNames = resources.getStringArray(R.array.lastNames)
+        val telephoneNumbers = resources.getStringArray(R.array.telephoneNumbers)
+
+        contactsData = mutableMapOf()
+
+        for (i in firstNames.indices) {
+            contactsData[i] = ListOfContactsClass(
+                firstNames[i],
+                lastNames[i],
+                telephoneNumbers[i],
+                i
+            )
+        }
+    }
+
+    inner class ListOfContactsClass(
+        var name: String,
+        var lastName: String,
+        var telephoneNumber: String,
+        var id: Int
+    )
 }
