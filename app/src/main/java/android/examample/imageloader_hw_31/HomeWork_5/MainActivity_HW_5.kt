@@ -1,50 +1,23 @@
 package android.examample.imageloader_hw_31.HomeWork_5
 
+import android.examample.imageloader_hw_31.HomeWork_5.Fragments.HW_5_ContactList_Fragment
 import android.examample.imageloader_hw_31.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 
-import android.view.View
-
-import android.widget.LinearLayout
-import android.widget.Toast
 
 
 class MainActivity_HW_5 : AppCompatActivity() {
 
-    lateinit var contactsData: List<ListOfContactsClass>
+//    lateinit var contactsData: List<ListOfContactsClass>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_hw5)
 
-        if (savedInstanceState == null)
-            initData()
-
-        val mainLayout = findViewById<View>(R.id.linerLayout_hw_5) as LinearLayout
-
-        for (e in contactsData){
-            val textView = TextView(this)
-
-            textView.setText(e.name)
-            textView.setId(e.id)
-
-            mainLayout.addView(textView)
-
-            textView.setOnClickListener{
-                Toast.makeText(this, e.id.toString(), Toast.LENGTH_SHORT).show()
-            }
-
-        }
+        supportFragmentManager.beginTransaction()
+            .add(R.id.fragment_container_HW_5, HW_5_ContactList_Fragment()) // or replace с теми же параметрами
+            //.addToBackStack(null) // если необходимо, чтоб по нажатию "назад" вы могли вернуться на предыдущий фрагмент. Вместо null можно задать свой ключ.
+            .commit();
     }
-
-    private fun initData(){
-        contactsData = listOf(
-            ListOfContactsClass("Петр", "Петрович", "+111111111", 101),
-            ListOfContactsClass("Александр", "Александрович", "+222222222", 102)
-        )
-    }
-
-    inner class ListOfContactsClass (var name: String, var lastName: String, var telephoneNumber: String, var id: Int)
 }

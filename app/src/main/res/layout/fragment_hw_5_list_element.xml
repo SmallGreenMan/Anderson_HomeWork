@@ -11,7 +11,7 @@
     app:barrierMargin="16dp">
 
     <Button
-        android:id="@+id/listElementButton"
+        android:id="@+id/elementButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:alpha="0"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/firstNameTextView"
         style="@style/HW_5_textView_style"
         app:layout_constraintStart_toEndOf="@+id/nameLable"
         app:layout_constraintTop_toTopOf="parent"
@@ -42,10 +42,10 @@
         app:layout_constraintTop_toBottomOf="@+id/nameLable" />
 
     <TextView
-        android:id="@+id/lastnameTextView"
+        android:id="@+id/lastNameTextView"
         style="@style/HW_5_textView_style"
         app:layout_constraintStart_toEndOf="@+id/lastnameLable"
-        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTextView"
         tools:text="@tools:sample/cities" />
 
     <TextView
@@ -59,7 +59,7 @@
         android:id="@+id/telephonNumberTextView"
         style="@style/HW_5_textView_style"
         app:layout_constraintStart_toEndOf="@+id/telephonNumberLable"
-        app:layout_constraintTop_toBottomOf="@+id/lastnameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTextView"
         tools:text="@tools:sample/cities" />
 
     <com.google.android.material.imageview.ShapeableImageView

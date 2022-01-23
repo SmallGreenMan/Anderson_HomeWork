@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeWork_5.HW_5_ContactList_Fragment">
+    tools:context=".HomeWork_5.Fragments.HW_5_ContactList_Fragment">
 
     <LinearLayout
         android:id="@+id/linerLayout_hw_5"
@@ -12,12 +12,6 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-
-        <android.examample.imageloader_hw_31.HomeWork_5.ElementOfConntactListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:firstName = "Вася"
-            />
 
     </LinearLayout>
 
