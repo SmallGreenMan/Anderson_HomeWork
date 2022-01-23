@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/madgin_outside"
+    android:background="#F6ECEC"
+    android:clickable="false"
+    android:orientation="vertical"
+    tools:context=".HomeWork_5.Fragments.HW_5_ContactInfo_Fragment">
+
+    <TextView
+        style="@style/HW_5_textView_style"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/contactLogoText"
+        android:textColor="#020202"
+        android:textSize="24sp" />
+
+    <TextView
+        style="@style/HW_5_textView_style"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        style="@style/HW_5_textView_style"
+        android:layout_width="match_parent"
+        android:hint="@string/nameHintText"
+        android:inputType="text"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        style="@style/HW_5_textView_style"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/lastname" />
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        style="@style/HW_5_textView_style"
+        android:layout_width="match_parent"
+        android:hint="@string/lastnameHintText"
+        android:inputType="text"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        style="@style/HW_5_textView_style"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/telephone" />
+
+    <EditText
+        android:id="@+id/telephoneNumberEditText"
+        style="@style/HW_5_textView_style"
+        android:layout_width="match_parent"
+        android:hint="@string/telephoneHinttext"
+        android:inputType="text|phone"
+        tools:text="@tools:sample/cities" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButton"
+            style="@style/HW_5_textView_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sawebuttonText"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/HW_5_textView_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancelButtonText"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 
+var testIndex = 1
 
 class MainActivity_HW_5 : AppCompatActivity() {
 
@@ -14,6 +15,8 @@ class MainActivity_HW_5 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_hw5)
+
+        testIndex = 12312312
 
         supportFragmentManager.beginTransaction()
             .add(R.id.fragment_container_HW_5, HW_5_ContactList_Fragment()) // or replace с теми же параметрами

@@ -66,4 +66,10 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="name">Name:</string>
     <string name="lastname">lastname:</string>
     <string name="telephone">Telephone:</string>
+    <string name="sawebuttonText">Сохранить</string>
+    <string name="cancelButtonText">Отменить</string>
+    <string name="contactLogoText">Данные выбранного контакта</string>
+    <string name="nameHintText">Введите имя</string>
+    <string name="lastnameHintText">Введите фамилию</string>
+    <string name="telephoneHinttext">Введите телефон</string>
 </resources>
