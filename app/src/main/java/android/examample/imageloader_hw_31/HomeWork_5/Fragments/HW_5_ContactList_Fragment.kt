@@ -2,6 +2,7 @@ package android.examample.imageloader_hw_31.HomeWork_5.Fragments
 
 import android.examample.imageloader_hw_31.HomeWork_5.CustomViewElement.ElementOfContactActions
 import android.examample.imageloader_hw_31.HomeWork_5.CustomViewElement.ElementOfContactListView
+import android.examample.imageloader_hw_31.HomeWork_5.MainActivity_HW_5
 import android.examample.imageloader_hw_31.R
 import android.examample.imageloader_hw_31.databinding.FragmentHW5ContactListBinding
 import android.os.Bundle
@@ -14,6 +15,7 @@ import android.widget.Toast
 import androidx.core.os.bundleOf
 
 import android.examample.imageloader_hw_31.HomeWork_5.contactsData
+import android.text.Layout
 
 class HW_5_ContactList_Fragment : Fragment() {
 
@@ -52,29 +54,37 @@ class HW_5_ContactList_Fragment : Fragment() {
             contactView?.setListener {
                 when (it) {
                     ElementOfContactActions.OPEN -> {       // --- Open Contact_Info_Fragment
-                        requireActivity().supportFragmentManager.beginTransaction()
-                            .replace(
-                                R.id.fragment_container_HW_5,
-                                HW_5_ContactInfo_Fragment.newInstance(
-                                    value.name,
-                                    value.lastName,
-                                    value.telephoneNumber,
-                                    value.id
-                                )
-                            )
-                            .addToBackStack(null)
-                            .commit()
+                        openContactInfo(value)
                     }
                     else -> {                               // --- Delete chosen contact
                         Toast.makeText(context, "${value.id} $it", Toast.LENGTH_SHORT).show()
-                        if (contactsData.containsKey(value.id)) {
-                            contactsData.remove(value.id)
-                            mainLayout.removeAllViews()
-                            drawContactList(view)
-                        }
+                        deleteChosenElementFromList(view, mainLayout, value.id)
                     }
                 }
             }
+        }
+    }
+
+    private fun openContactInfo(e: MainActivity_HW_5.ListOfContactsClass){
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(
+                R.id.fragment_container_HW_5,
+                HW_5_ContactInfo_Fragment.newInstance(
+                    e.name,
+                    e.lastName,
+                    e.telephoneNumber,
+                    e.id
+                )
+            )
+            .addToBackStack(null)
+            .commit()
+    }
+
+    private fun deleteChosenElementFromList(view: View, mainLayout: LinearLayout, id: Int){
+        if (contactsData.containsKey(id)) {
+            contactsData.remove(id)
+            mainLayout.removeAllViews()
+            drawContactList(view)
         }
     }
 
