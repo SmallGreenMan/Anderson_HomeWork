@@ -36,6 +36,10 @@ class HW_5_ContactInfo_Fragment : Fragment() {
         binding.lastNameEditText.setText(lastName)
         binding.telephoneNumberEditText.setText(telephoneNumber)
 
+        initOnClickListeners()
+    }
+
+    private fun initOnClickListeners(){
         binding.cancelButton.setOnClickListener {
             requireActivity().supportFragmentManager.popBackStackImmediate()
         }
@@ -46,7 +50,6 @@ class HW_5_ContactInfo_Fragment : Fragment() {
                 contactsData[id!!]?.telephoneNumber =
                     binding.telephoneNumberEditText.text.toString()
             }
-
             requireActivity().supportFragmentManager.popBackStackImmediate()
         }
     }
