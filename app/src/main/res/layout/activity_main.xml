@@ -116,5 +116,24 @@
             android:onClick="goToHomework_5"
             android:text="@string/contact_list_linerlayout" />
 
+        <TextView
+            android:id="@+id/textView_HW6_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/madgin_outside"
+            android:text="@string/home_work_6"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button_HomeWork_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inside_margin"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goToHomework_6"
+            android:text="@string/contact_list_recyclerview"
+            tools:ignore="OnClick" />
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

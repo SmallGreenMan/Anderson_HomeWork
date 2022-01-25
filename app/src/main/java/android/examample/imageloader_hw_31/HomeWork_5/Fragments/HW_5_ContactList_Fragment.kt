@@ -43,6 +43,8 @@ class HW_5_ContactList_Fragment : Fragment() {
     private fun drawContactList(view: View) {
         val mainLayout = binding.linerLayoutHw5
 
+        mainLayout.removeAllViews()
+
         for ((key, value) in contactsData) {
 
             val contactView = context?.let { ElementOfContactListView(it) }
@@ -83,11 +85,10 @@ class HW_5_ContactList_Fragment : Fragment() {
     private fun deleteChosenElementFromList(view: View, mainLayout: LinearLayout, id: Int){
         if (contactsData.containsKey(id)) {
             contactsData.remove(id)
-            mainLayout.removeAllViews()
+            //mainLayout.removeAllViews()
             drawContactList(view)
         }
     }
-
 
     companion object {
         private const val NAME_KEY = "NAME_KEY"

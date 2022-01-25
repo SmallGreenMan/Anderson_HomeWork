@@ -10,6 +10,7 @@ import android.examample.imageloader_hw_31.HomeWork_3.MainActivity_HW_3_1
 import android.examample.imageloader_hw_31.HomeWork_3.MainActivity_HW_3_2
 import android.examample.imageloader_hw_31.HomeWork_4.MainActivity_HW_4
 import android.examample.imageloader_hw_31.HomeWork_5.MainActivity_HW_5
+import android.examample.imageloader_hw_31.HomeWork_6.MainActivity_HW_6
 import android.widget.Switch
 import androidx.appcompat.app.AppCompatDelegate
 
@@ -62,6 +63,10 @@ class MainActivity : AppCompatActivity() {
 
     fun goToHomework_5(view: android.view.View) {
         startActivity(Intent(this, MainActivity_HW_5::class.java))
+    }
+
+    fun goToHomework_6(view: android.view.View) {
+        startActivity(Intent(this, MainActivity_HW_6::class.java))
     }
 
 
