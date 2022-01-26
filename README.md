@@ -67,3 +67,11 @@ Only colors, View and containers (FrameLayout/LinearLayout/ConstraintLayout) are
 <li> When long pressing on a list item, delete it and display the list without this item
 <li> Implement the ability to change the contact on the second screen. All changes should be visible on the first screen
 
+## Home work 6
+
+### - Contact list (RecyclerLayout) app:
+
+<li> Expand the functionality of the previous task, use recyclerViews instead of lineLayout, add photos to the contact data, make the number of contacts 100+
+<li> add separator between items and padding using ItemDecoration
+
+
