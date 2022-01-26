@@ -1,15 +1,14 @@
 package android.examample.imageloader_hw_31.HomeWork_6.fragments
 
-import android.examample.imageloader_hw_31.HomeWork_5.contactsData
 import android.examample.imageloader_hw_31.HomeWork_6.data.hw6_contactsData
+import android.examample.imageloader_hw_31.R
+import android.examample.imageloader_hw_31.databinding.FragmentHW6ContactInfoBinding
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.examample.imageloader_hw_31.R
-import android.examample.imageloader_hw_31.databinding.FragmentHW6ContactInfoBinding
 import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
 import com.squareup.picasso.Picasso
 
 
@@ -31,6 +30,12 @@ class HW_6_Contact_Info_Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        intiViews()
+
+        initOnClickListeners()
+    }
+
+    private fun intiViews(){
         val firstName = arguments?.getString(NAME_KEY) ?: ""
         val lastName = arguments?.getString(LASTNAME_KEY) ?: ""
         val telephoneNumber = arguments?.getString(TELEPHONE_NUMBER_KEY) ?: ""
@@ -46,9 +51,8 @@ class HW_6_Contact_Info_Fragment : Fragment() {
             .placeholder(R.drawable.ic_placeholder_foreground)
             .error(R.drawable.ic_placeholder_error_foreground)
             .into(binding.imgImageView)
-
-        initOnClickListeners()
     }
+
 
     private fun initOnClickListeners(){
         binding.cancelButton.setOnClickListener {
