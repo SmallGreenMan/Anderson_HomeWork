@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ImageLoader_HW_31"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".OkHttp.OkHttp"
+            android:exported="false" />
+        <activity
             android:name=".HomeWork_6.MainActivity_HW_6"
             android:exported="false" />
         <activity

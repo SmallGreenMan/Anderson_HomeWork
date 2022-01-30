@@ -61,8 +61,8 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="nnight_theam">Nnight theam</string>
     <string name="home_work_5">Home work 5</string>
     <string name="contact_list_linerlayout">Contact list (linerLayout)</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+<!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+<!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
     <string name="name">Name:</string>
     <string name="lastname">lastname:</string>
     <string name="telephone">Telephone:</string>
@@ -75,4 +75,13 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="contacts_photo_image">Contacts photo image</string>
     <string name="contact_list_recyclerview">Contact list (RecyclerView)</string>
     <string name="home_work_6">Home work 6</string>
+    <string name="network_okhttp">Network, HttpURLConnection + okhttp</string>
+    <string name="okhttp_app">HttpURL-OkHttp App</string>
+    <string name="textview">TextView</string>
+    <string name="add_book">Add book</string>
+    <string name="enter_the_book_name">Enter the book name or BookId</string>
+    <string name="remuve_book">Remuve Book</string>
+    <string name="httpurlconnection">HttpURLConnection</string>
+    <string name="okhttp">OkHttp</string>
+    <string name="refresh_book">Refresh Book</string>
 </resources>
