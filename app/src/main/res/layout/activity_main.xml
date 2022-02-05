@@ -139,9 +139,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/madgin_outside"
-            android:text="@string/network_okhttp"
+            android:text="@string/other_apps"
             android:textSize="@dimen/text_size"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button_HomeWork_okHttp"
@@ -151,6 +151,16 @@
             android:layout_marginBottom="@dimen/inside_margin"
             android:onClick="goOkHttp"
             android:text="@string/okhttp_app"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/button_recycler_observer_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inside_margin"
+            android:layout_marginBottom="@dimen/inside_margin"
+            android:onClick="goRecyclerObserver"
+            android:text="@string/contact_list_recyclerview_observer"
             tools:ignore="OnClick" />
 
     </LinearLayout>
