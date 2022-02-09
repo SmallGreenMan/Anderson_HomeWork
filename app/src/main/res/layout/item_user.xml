@@ -1,65 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="5dp"
-    android:clickable="true"
-    android:foreground="?attr/selectableItemBackground">
+    android:layout_height="match_parent"
+    android:padding="8dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        android:outlineSpotShadowColor="@color/gray"
+        android:outlineAmbientShadowColor="@color/blue">
 
-        <ImageView
-            android:id="@+id/photoImageView"
-            android:layout_width="100dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@android:color/darker_gray"
-            android:contentDescription="@string/contacts_photo_image"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ImageContrastCheck"
-            tools:src="@tools:sample/avatars" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/name_textView"
-            style="@style/listItem_textLable_Style"
-            app:layout_constraintBottom_toTopOf="@+id/lastName_textView"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@tools:sample/first_names" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/photoCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/madgin_outside"
+                android:layout_marginTop="@dimen/margin_inside"
+                android:layout_marginBottom="@dimen/margin_inside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/lastName_textView"
-            style="@style/listItem_textLable_Style"
-            app:layout_constraintBottom_toTopOf="@+id/telephonNumber_textView"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/name_textView"
-            tools:text="@tools:sample/last_names" />
+                <ImageView
+                    android:id="@+id/photoImageView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
 
-        <TextView
-            android:id="@+id/telephonNumber_textView"
-            style="@style/listItem_textLable_Style"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/lastName_textView"
-            tools:text="@tools:sample/us_phones" />
+                    android:background="@android:color/darker_gray"
+                    android:contentDescription="@string/contacts_photo_image"
+                    tools:ignore="ImageContrastCheck"
+                    tools:src="@tools:sample/avatars" />
 
-        <ImageView
-            android:id="@+id/imageView_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/madgin_outside"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_edit_24" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/name_textView"
+                style="@style/listItem_textLable_Style"
+                android:layout_width="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/madgin_outside"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/company_textView"
+                app:layout_constraintEnd_toStartOf="@+id/moreImageViewButton"
+                app:layout_constraintStart_toEndOf="@+id/photoCardView"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@tools:sample/full_names" />
+
+            <TextView
+                android:id="@+id/company_textView"
+                style="@style/listItem_textLable_Style"
+                android:layout_width="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/madgin_outside"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#474646"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/telephonNumber_textView"
+                app:layout_constraintEnd_toStartOf="@+id/moreImageViewButton"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/photoCardView"
+                app:layout_constraintTop_toBottomOf="@+id/name_textView"
+                tools:text="@tools:sample/cities" />
+
+            <TextView
+                android:id="@+id/telephonNumber_textView"
+                style="@style/listItem_textLable_Style"
+                android:layout_width="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/madgin_outside"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#474646"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/moreImageViewButton"
+                app:layout_constraintStart_toEndOf="@+id/photoCardView"
+                app:layout_constraintTop_toBottomOf="@+id/company_textView"
+                tools:text="@tools:sample/us_phones" />
+
+            <ImageView
+                android:id="@+id/moreImageViewButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inside_margin"
+                android:layout_marginEnd="@dimen/madgin_outside"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_more" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>

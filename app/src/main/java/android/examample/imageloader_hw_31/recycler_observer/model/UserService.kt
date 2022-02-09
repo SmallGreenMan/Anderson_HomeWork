@@ -19,6 +19,7 @@ class UserService {
                 id = it.toLong(),
                 name = faker.name().name(),
                 telephone = faker.phoneNumber().phoneNumber(),
+                company = faker.company().name(),
                 photo = "https://picsum.photos/300/300/?temp=${it}"
             )
         }
