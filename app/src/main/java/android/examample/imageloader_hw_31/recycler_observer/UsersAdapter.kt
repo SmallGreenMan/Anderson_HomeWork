@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class UsersAdapter : RecyclerView.Adapter<UsersAdapter.UsersViewHolder> {
+class UsersAdapter : RecyclerView.Adapter<UsersAdapter.UsersViewHolder>() {
 
     var users: List<User> = emptyList()
         set(newValue) {

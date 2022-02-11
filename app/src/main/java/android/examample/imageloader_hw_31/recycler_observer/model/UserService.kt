@@ -14,7 +14,7 @@ class UserService {
     init {
         val faker: Faker = Faker.instance()
 
-        val generatedUsers: List<User> = (1..100).map {
+        users = (1..100).map {
             User(
                 id = it.toLong(),
                 name = faker.name().name(),
@@ -22,7 +22,7 @@ class UserService {
                 company = faker.company().name(),
                 photo = "https://picsum.photos/300/300/?temp=${it}"
             )
-        }
+        }.toMutableList()
     }
 
     fun getUsers(): List<User>{
