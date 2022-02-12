@@ -7,6 +7,7 @@ import android.examample.imageloader_hw_31.recycler_observer.model.UsersListener
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 
 class RecyclerObserverActivity : AppCompatActivity() {
@@ -35,19 +36,27 @@ class RecyclerObserverActivity : AppCompatActivity() {
             override fun onUserDetails(user: User){
                 Toast.makeText(this@RecyclerObserverActivity, "User: ${user.name}", Toast.LENGTH_SHORT).show()
             }
+
+            override fun onUserFire(user: User) {
+                usersService.fireUser(user)
+            }
         })
 
         val layoutManager = LinearLayoutManager(this)
         binding.recyclerViewObserver.layoutManager = layoutManager
         binding.recyclerViewObserver.adapter = adapter
 
-        usersService.addListener(usersListener)
+        val itemAnimator = binding.recyclerViewObserver.itemAnimator
+        if (itemAnimator is  DefaultItemAnimator){
+            itemAnimator.supportsChangeAnimations = false
+        }
 
+        usersService.addListener(usersListener)
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        usersService.remuveListener (usersListener)
+        usersService.removeListener (usersListener)
     }
 
     private val usersListener: UsersListener = {
