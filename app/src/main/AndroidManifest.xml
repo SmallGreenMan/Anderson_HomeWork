@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImageLoader_HW_31"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:name=".recycler_observer.App">
+        <activity
+            android:name=".recycler_observer.RecyclerObserverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OkHttp.OkHttp"
+            android:exported="false" />
         <activity
             android:name=".HomeWork_6.MainActivity_HW_6"
             android:exported="false" />
