@@ -2,6 +2,7 @@ package android.examample.imageloader_hw_31.recycler_observer
 
 import android.examample.imageloader_hw_31.R
 import android.examample.imageloader_hw_31.databinding.ItemUserBinding
+import android.examample.imageloader_hw_31.recycler_mvvm.screens.UserListItem
 import android.examample.imageloader_hw_31.recycler_observer.model.User
 import android.view.LayoutInflater
 import android.view.Menu
@@ -48,13 +49,13 @@ class UsersAdapter(
     private val actionListener: UserActionListener
 ) : RecyclerView.Adapter<UsersAdapter.UsersViewHolder>(), View.OnClickListener {
 
-    var users: List<User> = emptyList()
+    var users: List<UserListItem> = emptyList()
         set(newValue) {
-            val diffCallBack = UsersDiffCallBack(field, newValue)
-            val diffResult = DiffUtil.calculateDiff(diffCallBack)
+            //val diffCallBack = UsersDiffCallBack(field, newValue)
+            //val diffResult = DiffUtil.calculateDiff(diffCallBack)
             field = newValue
-            diffResult.dispatchUpdatesTo(this)
-            //notifyDataSetChanged()
+            //diffResult.dispatchUpdatesTo(this)
+            notifyDataSetChanged()
         }
 
     override fun onClick(v: View) {
@@ -75,18 +76,28 @@ class UsersAdapter(
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemUserBinding.inflate(inflater, parent, false)
 
-        binding.root.setOnClickListener(this)
         binding.moreImageViewButton.setOnClickListener(this)
 
         return UsersViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: UsersViewHolder, position: Int) {
-        val user: User = users[position]
+        val userListItem = users[position]
+        val user = userListItem.user
         val context = holder.itemView.context
         with(holder.binding){
             holder.itemView.tag = user
             moreImageViewButton.tag = user
+
+            if (userListItem.isInProgress){
+                moreImageViewButton.visibility = View.INVISIBLE
+                itemProgressBarr.visibility = View.VISIBLE
+                holder.binding.root.setOnClickListener(null)
+            } else {
+                moreImageViewButton.visibility = View.VISIBLE
+                itemProgressBarr.visibility = View.INVISIBLE
+                holder.binding.root.setOnClickListener(this@UsersAdapter)
+            }
 
             nameTextView.text = user.name
             companyTextView.text =
@@ -110,7 +121,7 @@ class UsersAdapter(
         val popupMenu = PopupMenu(view.context, view)
         val context = view.context
         val user: User = view.tag as User
-        val position = users.indexOfFirst { it.id == user.id }
+        val position = users.indexOfFirst { it.user.id == user.id }
 
         popupMenu.menu.add(0, ID_MOVE_UP, Menu.NONE, context.getString(R.string.Move_Up)).apply {
             isEnabled = position > 0

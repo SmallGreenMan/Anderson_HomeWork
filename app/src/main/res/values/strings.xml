@@ -101,5 +101,9 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="no_users">No users</string>
     <string name="contact_list_mvvm">Contact list (mvvm)</string>
     <string name="User_has_been_deleted">User has been deleted</string>
+    <string name="cant_load_user_details">Cant load user details</string>
+    <string name="cant_delete_user">Cant delete user</string>
+    <string name="cant_move_user">Cant move user</string>
+
 
 </resources>

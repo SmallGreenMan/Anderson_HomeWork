@@ -1,6 +1,13 @@
 package android.examample.imageloader_hw_31.recycler_mvvm.tasks
 
-sealed class Result<T>
+sealed class Result<T> {
+
+    fun <R> map(mapper: (T) -> R): Result<R>{
+        if(this is SuccessResult) return SuccessResult(mapper(data))
+        return this as Result<R>
+    }
+
+}
 
 class SuccessResult<T> (
     val data: T

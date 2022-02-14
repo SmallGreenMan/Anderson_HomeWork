@@ -60,6 +60,6 @@ class RecyclerObserverActivity : AppCompatActivity() {
     }
 
     private val usersListener: UsersListener = {
-        adapter.users = it
+        //adapter.users = it
     }
 }
