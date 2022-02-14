@@ -5,14 +5,17 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".recycler_observer.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImageLoader_HW_31"
-        android:usesCleartextTraffic="true"
-        android:name=".recycler_observer.App">
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".recycler_mvvm.MvvmActivity"
+            android:exported="false" />
         <activity
             android:name=".recycler_observer.RecyclerObserverActivity"
             android:exported="false" />

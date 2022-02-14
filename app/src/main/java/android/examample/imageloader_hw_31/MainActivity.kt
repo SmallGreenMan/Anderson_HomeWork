@@ -10,6 +10,7 @@ import android.examample.imageloader_hw_31.HomeWork_4.MainActivity_HW_4
 import android.examample.imageloader_hw_31.HomeWork_5.MainActivity_HW_5
 import android.examample.imageloader_hw_31.HomeWork_6.MainActivity_HW_6
 import android.examample.imageloader_hw_31.OkHttp.OkHttp
+import android.examample.imageloader_hw_31.recycler_mvvm.MvvmActivity
 import android.examample.imageloader_hw_31.recycler_observer.RecyclerObserverActivity
 import android.os.Bundle
 import android.widget.Switch
@@ -77,6 +78,10 @@ class MainActivity : AppCompatActivity() {
 
     fun goRecyclerObserver(view: android.view.View) {
         startActivity(Intent(this, RecyclerObserverActivity::class.java))
+    }
+
+    fun goRecyclerMvvm(view: android.view.View) {
+        startActivity(Intent(this, MvvmActivity::class.java))
     }
 
 
